@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+:root{
+    view-transition-name: root;
+}
+html{
+    display: block;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 600vh;
+    background: url(portfolio-background-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    margin-left: 600px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+ul{
+    display: block;
+    list-style: disc;
+    margin-block-start: 1em;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a.active{
+    color: red;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+h2{
+    display: block;
+    font-weight: bold;
+}
+.text{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-size: 5em;
+    letter-spacing: 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.7em;
+    animation: glow 5s linear infinite;
+}
+@keyframes glow{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3748;
+        text-shadow: none;
+}
+18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    color: white;
+}
+}
+.greetings .intro {
+    font-family: 'poppins';
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 500px;
+    color: silver;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.greetings .heading {
+    font-family: 'poppins';
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: left;
+    font-weight: 500px;
+    color: #78C1F3;
+}
+.greetings .desc {
+    font-family: 'poppins';
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+    color:silver;
+}
+.greetings h3 {
+    font-family: 'poppins';
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 70px;
+    text-align: left;
+    font-weight: 500px;
+    color: teal;
+}
+.greetings .desc_pro {
+    font-family: 'poppins';
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+    color:silver;
+}
+.skills .progress_head {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+.progress-bar {
+    background-color: #959595;
+    width: 600px;
+    height: 10px;
+    margin-left: 70px;
+    border-radius: 5px;
+}
+span{
+    display: flex;
+    position: relative;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    filter: drop-shadow(0 0 20px #fff);
+    animation: animate 8s linear infinite;
+}
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.c {
+    background: red;
+    animation: c 5s linear forwards;
+}
+.ca {
+    background: yellowgreen;
+    animation: ca 5s linear forwards;
+}
+.java {
+    background: #FFB84C;
+    animation: java 5s linear forwards;
+} 
+.python {
+    background: #9336B4;
+    animation: python 5s linear forwards;
+} 
+.html {
+    background: #865DFF;
+    animation: html 5s linear forwards;
+}  
+.css {
+    background: #FFEA20;
+    animation: css 5s linear forwards;
+}  
+.js {
+    background: #0F6292;
+    animation: js 5s linear forwards;
+}
+@keyframes c{
+100% {
+    width: 89%;
+   }
+}
+@keyframes ca{
+100% {
+    width: 86%;
+}
+}
+@keyframes java{
+100% {
+    width: 80%;
+}
+}
+@keyframes python{
+100% {
+    width: 85%;
+}
+}
+@keyframes html{
+100% {
+    width: 95%;
+}
+}
+@keyframes css{
+100% {
+    width: 93%;
+}
+}
+@keyframes js{
+100% {
+    width: 91%;
+}
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}

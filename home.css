@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+:root{
+    view-transition-name: root;
+}
+html{
+    display: block;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(portfolio-background-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    margin-left: 600px;
+}
+ul{
+    display: block;
+    list-style: disc;
+    margin-block-start: 1em;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a.active{
+    color: red;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.detail{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.detail h1{
+    font-size: 50px;
+    color: red;
+    margin-left: -750px;
+    margin-bottom: 50px;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+span{
+    position: relative;
+    color: #000;
+}
+span::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    filter: drop-shadow(0 0 20px #fff);
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+.detail p{
+    color: #add8e6;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.detail a{
+    background-color: #9b3ee9;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+.volume-boost-visusalizer{
+    position: fixed;
+    display: none;
+    -webkit-box-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 5px;
+}
+.volume-boost-visusalizer .sound{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.volume-boost-visusalizer .sound-icon{
+    position: relative;
+    color: rgb(136,201,247);
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(136,201,247);
+    border-image: initial;
+    border-radius: 5px 0 0 5px;
+}
